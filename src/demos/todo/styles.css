@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo");
+
+body {
+	height: 100vh;
+	font-family: "Archivo", Arial;
+	background-repeat: no-repeat;
+	background: -moz-linear-gradient(top, #ff670f 0%, #f49c49 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ff670f 0%, #f49c49 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ff670f 0%, #f49c49 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #eee;
+}
+
+#app {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+button {
+	font-family: "Archivo", Arial;
+	-webkit-appearance: none;
+	border: 3px solid #eee;
+	background-color: transparent;
+	color: #eee;
+	border-radius: 30px;
+	cursor: pointer;
+	padding: 5px;
+	min-width: 31px;
+}
+
+button:hover {
+	background-color: #00b3b2;
+}
+
+.todo-done {
+	text-decoration: line-through;
+}
+
+.todo-item {
+	font-size: 20pt;
+	display: grid;
+	vertical-align: middle;
+	grid-template-columns: auto 75px;
+	padding: 0 10px;
+}
+
+.todo-item-title {
+	margin-top: 5px;
+	text-overflow: ellipsis;
+	max-width: 400px;
+	overflow: hidden;
+}
+
+.todo-item-btns {
+	margin: auto;
+}
+
+.btn-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+}
+
+#new-todo-text {
+	border-radius: 30px;
+	font-family: Archivo;
+	font-size: 20pt;
+	padding: 0 15px;
+}
+
+ul {
+	list-style: none;
+	text-align: left;
+	background-color: rgba(240, 240, 240, 0.3);
+	border-radius: 5px 5px 0 0;
+	padding: 20px 0 20px 0;
+}
+
+li {
+	cursor: pointer;
+	padding: 5px;
+	border-bottom: 1px solid;
+}

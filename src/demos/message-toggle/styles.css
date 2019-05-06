@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo");
+
+body {
+  height: 100vh;
+  font-family: "Archivo", Arial;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(top, #ff670f 0%, #f49c49 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff670f 0%, #f49c49 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff670f 0%, #f49c49 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #eee;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  font-family: "Archivo", Arial;
+  -webkit-appearance: none;
+  border: 3px solid #eee;
+  background-color: transparent;
+  color: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #7d5f21;
+}
+
+#message {
+  margin-bottom: 30px;
+  border: 3px solid #eee;
+  border-radius: 30px;
+  padding: 25px 25px 10px 25px;
+  text-align: left;
+}
+
+#message::before {
+  content: "Message";
+  position: absolute;
+  font-size: x-small;
+  top: 20px;
+  color: #f8ff9b;
+}
